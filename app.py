@@ -115,6 +115,9 @@ def predict():
     xg_prediction = xg_model.predict(final_features)
     
     
+    
+    
+
     rf_prediction_o = math.exp(rf_prediction[0])
     ab_prediction_o = math.exp(ab_prediction[0])
     ann_prediction_o = math.exp(ann_prediction[0])
@@ -126,19 +129,6 @@ def predict():
     ridge_prediction_o = math.exp(ridge_prediction[0])
     svr_prediction_o = math.exp(svr_prediction[0])
     xg_prediction_o = math.exp(xg_prediction[0])
-    
-
-    rf_prediction_o = round(rf_prediction[0], 3)
-    ab_prediction_o = round(ab_prediction[0], 3)
-    ann_prediction_o = round(ann_prediction[0], 3)
-    cb_prediction_o = round(cb_prediction[0], 3)
-    dt_prediction_o = round(dt_prediction[0], 3)
-    knn_prediction_o = round(knn_prediction[0], 3)
-    lasso_prediction_o=round(lasso_prediction[0], 3)
-    lr_prediction_o = round(lr_prediction[0], 3)
-    ridge_prediction_o = round(ridge_prediction[0], 3)
-    svr_prediction_o = round(svr_prediction[0], 3)
-    xg_prediction_o = round(xg_prediction[0], 3)
     
     rf_prediction_o=format(rf_prediction_o,'.3f')
     ab_prediction_o=format(ab_prediction_o,'.3f')
