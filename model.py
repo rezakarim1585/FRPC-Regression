@@ -36,4 +36,4 @@ pickle.dump(regressor, open('model.pkl','wb'))
 
 # Loading model to compare the results
 model = pickle.load(open('model.pkl','rb'))
-print(model.predict([[2, 9, 6]]))
+print(model.predict([[0,1,2,3,4,5,6]]))
