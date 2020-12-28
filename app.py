@@ -77,12 +77,12 @@ def predict():
     if b!=0:
         final_features=final_features+[np.log(b)]
     else:
-        final_features=final_features+[b]
+        final_features=final_features+[(b)]
         
     if ef!=0:
         final_features=final_features+[np.log(ef)]
     else:
-        final_features=final_features+[ef]
+        final_features=final_features+[(ef)]
     
     
   
