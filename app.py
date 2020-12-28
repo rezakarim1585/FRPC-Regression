@@ -58,10 +58,10 @@ def predict():
     else:
         final_features=final_features+[(a_d)]
         
-    if pf!=0:
-        final_features=final_features+[np.log(pf)]
+    if p!=0:
+        final_features=final_features+[np.log(p)]
     else:
-        final_features=final_features+[(pf)]
+        final_features=final_features+[(p)]
         
     if fc!=0:
         final_features=final_features+[np.log(fc)]
