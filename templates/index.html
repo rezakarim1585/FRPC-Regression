@@ -36,10 +36,10 @@ tr {
 
 <body>
   <div class="container">
-    <center><h3>FRPRC  SHEAR STRENGTH PREDICTION</h3></center>
+    <center><h3>SHEAR STRENGTH PREDICTION  OF FRP REINFORCED CONCRETE BEAM</h3></center>
     <div class="row">
 
-      <div class="col-md-4 col-sm-10 mt-2">
+      <div class="col-md-4 col-sm-10 mt-4">
         <h5>Fill up the followings to predict Shear Strength of FRP-RC Beam:</h5>
         <!-- Main Input For Receiving Query to our ML -->
         <form class="form-horizontal" action="{{ url_for('predict')}}" method="post">
@@ -109,7 +109,7 @@ tr {
 		<input type="text" name="fu/fy" placeholder="fu/fy" required="required" />
 		<input type="text" name="type" placeholder="type" required="required" /> -->
             <div class="container mt-2">
-              <div class="d-flex float-right">
+              <div class="d-flex float-left">
                 <button type="submit" class="btn btn-info">Predict</button>
               </div>
             </div>
@@ -118,10 +118,10 @@ tr {
     </div>
 
     <div class="col-md-4 mt-5 col-sm-14">
-      <img src="/tmp/pic1.png" style="height: 98%; width: 100%;"></img>
+      <img src="/tmp/pic1.png" style="height: 70%; width: 70%;"></img>
     </div>
 
-    <div class="col-md-4 mt-2 col-sm-1">
+    <div class="col-md-4 mt-4 col-sm-1">
       <h3>Prediction Result</h3>
       <table class="table table-bordered table-striped">
         <thead class="thead-dark">
